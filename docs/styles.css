@@ -104,12 +104,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .logo-lockup {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   line-height: 1;
 }
-.logo-lockup .l1 { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; color: var(--ink); }
-.logo-lockup .l2 { font-size: 9px; font-weight: 600; letter-spacing: 2px; color: var(--steel); text-transform: uppercase; margin-top: 2px; }
+.brand-mark { height: 48px; width: auto; display: block; }
+.footer .brand-mark { height: 84px; }
 .nav-links { display: flex; gap: var(--sp-lg); font-size: 14px; font-weight: 500; }
 .nav-links a { color: var(--ink); }
 .nav-right { display: flex; align-items: center; gap: var(--sp-sm); }
