@@ -253,9 +253,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* Industry prompt library */
 .industry-block { border-radius: var(--r-xl); padding: var(--sp-xl); margin-bottom: var(--sp-lg); }
-.industry-block summary { cursor: pointer; list-style: none; font-size: 20px; font-weight: 600; }
+.industry-block summary { cursor: pointer; list-style: none; font-size: 23px; font-weight: 700; }
 .industry-block summary::-webkit-details-marker { display: none; }
-.industry-block .industry-sub { font-size: 14px; color: var(--slate); font-weight: 400; margin-top: 4px; }
 .prompt-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-md); margin-top: var(--sp-lg); }
 .prompt-card { background: var(--canvas); border-radius: var(--r-md); padding: var(--sp-md); border: 1px solid var(--hairline); }
 .prompt-card h4 { font-size: 14px; margin-bottom: 6px; font-weight: 600; }
