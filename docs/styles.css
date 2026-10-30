@@ -107,11 +107,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   align-items: center;
   line-height: 1;
 }
-.brand-mark { height: 48px; width: auto; display: block; }
+.brand-mark { height: 64px; width: auto; display: block; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.15)); }
 .footer .brand-mark { height: 84px; }
-.nav-links { display: flex; gap: var(--sp-lg); font-size: 14px; font-weight: 500; }
+.nav-links { display: flex; align-items: center; gap: var(--sp-lg); font-size: 14px; font-weight: 600; margin-left: var(--sp-xl); }
 .nav-links a { color: var(--ink); }
-.nav-right { display: flex; align-items: center; gap: var(--sp-sm); }
+.nav-right { display: flex; align-items: center; gap: var(--sp-sm); margin-left: auto; }
 
 /* Hero */
 .hero {
