@@ -1,11 +1,11 @@
 import { Sandbox } from '@e2b/code-interpreter';
 import {
+  anthropic,
   createAgent,
   createNetwork,
   createState,
   createTool,
   type Message,
-  gemini,
   type Tool,
 } from '@inngest/agent-kit';
 import { z } from 'zod';
@@ -78,10 +78,10 @@ export const codeAgentFunction = inngest.createFunction(
       name: 'code-agent',
       description: 'An expert coding agent',
       system: PROMPT,
-      model: gemini({
-        model: 'gemini-2.0-flash',
+      model: anthropic({
+        model: 'claude-sonnet-5-5',
         defaultParameters: {
-          generationConfig: { temperature: 0.1 },
+          temperature: 0.1,
         },
       }),
       tools: [
@@ -221,10 +221,10 @@ export const codeAgentFunction = inngest.createFunction(
       name: 'fragment-title-generator',
       description: 'A fragment title generator',
       system: FRAGMENT_TITLE_PROMPT,
-      model: gemini({
-        model: 'gemini-2.0-flash',
+      model: anthropic({
+        model: 'claude-haiku-5-5',
         defaultParameters: {
-          generationConfig: { temperature: 0.1 },
+          temperature: 0.1,
         },
       }),
     });
@@ -233,10 +233,10 @@ export const codeAgentFunction = inngest.createFunction(
       name: 'response-generator',
       description: 'A response generator',
       system: RESPONSE_PROMPT,
-      model: gemini({
-        model: 'gemini-2.0-flash',
+      model: anthropic({
+        model: 'claude-haiku-5-5',
         defaultParameters: {
-          generationConfig: { temperature: 0.1 },
+          temperature: 0.1,
         },
       }),
     });
